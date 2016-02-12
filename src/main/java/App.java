@@ -13,25 +13,23 @@ public class App {
 
   public static String vowelsToDash(String inputString) {
     inputStr = inputString;
+    // convert 'y' when acting as a vowel
     outputStr = inputStr.replaceAll("y(?![aeiouAEIOU])(?!'[aeiou])|([aeiouAEIOU])", "-");
     outputStr = outputStr.replaceAll("[aeiouAEIOU]", "-");
-
 
     return outputStr;
   }
 
-
   public static void main( String[] args ) {
-  //   staticFileLocation("/public");
-  //   String layout = "templates/layout.vtl";
-  //
-  //   get("/", (request, response) -> {
-  //     HashMap model = new HashMap();
-  //
-  //     model.put("simpleHeading", "Simple Input Form");
-  //     model.put("template", "templates/simple-form.vtl");
-  //     return new ModelAndView(model, layout);
-  //      }, new VelocityTemplateEngine());
+    staticFileLocation("/public");
+    String layout = "templates/layout.vtl";
+
+    get("/", (request, response) -> {
+      HashMap model = new HashMap();
+
+      model.put("template", "templates/start-game-form.vtl");
+      return new ModelAndView(model, layout);
+       }, new VelocityTemplateEngine());
   //
   //   get("/result-simple", (request, response) -> {
   //     HashMap model = new HashMap();
