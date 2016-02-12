@@ -13,7 +13,9 @@ public class App {
 
   public static String vowelsToDash(String inputString) {
     inputStr = inputString;
-    outputStr = inputStr.replaceAll("[aeiouAEIOU]", "-");
+    outputStr = inputStr.replaceAll("y(?![aeiouAEIOU])(?!'[aeiou])|([aeiouAEIOU])", "-");
+    outputStr = outputStr.replaceAll("[aeiouAEIOU]", "-");
+
 
     return outputStr;
   }
