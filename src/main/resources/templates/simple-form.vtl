@@ -1,0 +1,18 @@
+<h1>$simpleHeading</h1>
+<form action="/result-leap" method="get">
+  <div class="form-group">
+    <label for="userInput"></label>
+    <input name="userInput" id="userInput" type="text">
+  </div>
+  <button type="submit" class="btn">Submit</button>
+</form>
+#if ($simpleInput)
+<div id="display-results-simple">
+  <h4>The result is: $simpleInput</h4>
+</div>
+#end
+#if ($yearInput)
+<div id="display-results-leapYear">
+  <h4>The yearInput result is: $yearInput</h4>
+</div>
+#end
