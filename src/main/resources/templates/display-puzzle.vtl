@@ -1,0 +1,23 @@
+<h4>This is the puzzle to match: $encryptedString<h4>
+
+<h1>Enter your guess:</h1>
+<form action="/guess" method="get">
+  <div class="form-group">
+    <label for="guess"></label>
+    <input name="guess" id="guess" type="text">
+  </div>
+  <div class="hidden" style="display-none">
+    <input name="hidden" id="hidden" type="text" value="$encryptedString">
+  </div>
+  <button type="submit" class="btn">Submit</button>
+</form>
+#if ($noMatch)
+<div id="display-result">
+  <h4>$message</h4>
+</div>
+#end
+#if ($isMatch)
+<div id="display-result">
+  <h4>$message</h4>
+</div>
+#end
