@@ -54,7 +54,7 @@ public class App {
       HashMap model = new HashMap();
 
       boolean isMatch = compareToInput(request.queryParams("guess"));
-      String encryptedString = request.queryParams("hidden");
+      String encryptedString = request.queryParams("puzzle-string");
 
       if (isMatch) {
         model.put("isMatch", "True");
