@@ -1,0 +1,157 @@
+.page-header {
+  background-color: mediumseagreen;
+  color: #fff380;
+  text-align: center;
+  height: 100px;
+  vertical-align: text-top;
+  border:1px solid #2b4f6e;
+  margin-bottom: -2px;
+}
+
+#header h1 {
+  font-size: 40px;
+}
+
+.row {
+  margin: 0px;
+}
+
+.canvas {
+  padding: 10px;
+  border: 1px solid darkgray;
+  background: lemonchiffon;
+  font-size: 15.5;
+}
+
+.lightgrey-border-thin {
+  border: 1px solid darkgrey;
+}
+
+#right-canvas {
+  font-size: 15.5px;
+}
+
+#right-canvas h4 {
+  padding-top: 15px;
+}
+
+#rules-text {
+  padding-top: 10px;
+}
+
+#left-canvas {
+  border: 1px solid black;
+  background-color: lightgrey;
+}
+
+#left-canvas p {
+  margin-left: 15px;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+label {
+  font-size: 18px;
+  color: crimson;
+}
+
+.btn {
+  color: yellow;
+  font-size: 16px;
+  background-color: mediumseagreen;
+}
+
+/*input#puzzle-string {
+  float: right;
+}*/
+
+.input-background-lightgray {
+  background-color: lightgray;
+}
+
+.rigth-inner-top {
+  color: dimgray;
+}
+
+h1 {
+  font-size: 15px;
+  color: l
+}
+
+h2, h4 {
+  color: crimson;
+}
+
+.bottom-row {
+  background-color: lemonchiffon;
+  border: 1px solid slategrey;
+}
+
+.bottom-row h5 {
+  font-size: 20px;
+  color: crimson;
+  font-weight: bold:
+  margin: 0 0 0px;
+}
+
+.bottom-row h3 {
+  text-align: right;
+  color: cadetblue;
+}
+
+.panel {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 1px solid darkgray;
+  font-size: inherit;
+}
+
+.panel-body {
+  background-color: khaki;
+  font-size: 16px;
+  color: royalblue;
+}
+
+#encrypt-panel p {
+  font-size: 22px;
+  font-weight: bold;
+  color: crimson;
+}
+
+.width100 {
+  width: 95%;
+  margin-top: 2px;
+  height: 30px;
+  /*padding: 0 10px 0;*/
+}
+
+#guess {
+  padding-left: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.col-sm-10 {
+  padding-left: 0px;
+}
+
+.form-inline .form-group{
+    /*display:inline-block;*/
+    /*width: 600px;*/
+}
+
+.form-inline .form-group input {
+    /*form:;*/
+}
+
+li, #rules-text {
+  color: royalblue;
+}
+
+.row-eq-height {
+  display: flex;
+}

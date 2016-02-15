@@ -1,8 +1,79 @@
-<h1>Enter some text below and submit to start game!</h1>
-<form action="/generate-puzzle" method="get">
-  <div class="form-group">
-    <label for="inputString"></label>
-    <input name="inputString" id="inputString" type="text">
+
+
+
+
+
+<!--  -->
+<!-- <div class="container-fluid"> -->
+  <div class="page-header" id="header">
+    <h1>Word Puzzle</h1>
   </div>
-  <button type="submit" class="btn">Submit</button>
-</form>
+  <div class="row row-eq-height">
+    <div class="col-sm-3 canvas" id="left-canvas">
+      <h3>About Word Puzzle:</h3>
+      <h5>Created By:</h5>
+        <p>James Turello</p>
+      <h5>Assignment:</h5>
+      <p>Behavior Driven Development with Java - Code Review</p>
+      <h5>Date:</h5>
+      <p>02.12.2016</p>
+    </div> <!-- end left col-3-sm column -->
+
+    <div class="col-sm-9 canvas" id="right-canvas">
+      <div class="row right-inner-top">
+        <h2>Let's Play!</h2>
+        <h4>Rules:</h4>
+        <p id="rules-text">
+          Enter some text below and submit to begin:
+        </p>
+        <ol>
+          <li>All vowels in your text will be replaced with dashes,</li>
+          <li>The encrypted text will display on a separate page,</li>
+          <li>Players will submit guesses, and</li>
+          <li>The game continues until someone guesses correctly</li>
+        </ol>
+      </div>
+    </div>
+  </div> <!-- end row 1 div -->
+  <div class="row row-eq-height bottom-row">
+      <div class="col-sm-3 canvas">
+      <h3>Enter text:</h3>
+      </div>
+      <div class="col-sm-9">
+          <div class="panel panel-default lightgrey-border-thin">
+            <div class="panel-body">
+
+              <form action="/generate-puzzle" class="form-inline"  method="get">
+
+                <div class="row">
+                  <div class="col-sm-10">
+
+                    <div class="form-group width100">
+                      <label for="inputString"></label>
+                      <input name="inputString" id="inputString" class="input-background-lightgray width100" type="text">
+                    </div>
+
+                  </div>
+
+                  <div class="col-sm-2">
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+  </div>
+<!-- </div> -->
+
+
+
+
+
+          <!-- <form class="form-inline" id="submitForm">
+            <div class="form-group">
+              <label for="numberInputField">Enter your number here:</label>
+              <input type="number" class="form-control" id="numberInputField" placeholder="#">
+            </div>
+            <button type="submit" id="btnSubmit" class="btn btn-warning">Play Ping Pong!</button>
+          </form> -->
