@@ -59,6 +59,7 @@ public class App {
       if (isMatch) {
         model.put("isMatch", "True");
         // model.put("result", "Is match");
+        model.put("encryptedString", inputStr);
         model.put("message", "Your guess was a match!");
       } else {
         model.put("noMatch", "True");

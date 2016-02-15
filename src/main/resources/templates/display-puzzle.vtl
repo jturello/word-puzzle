@@ -37,58 +37,72 @@
     <h3>Puzzle text:</h3>
     </div>
     <div class="col-sm-9">
-        <div class="panel panel-default lightgrey-border-thin">
-          <div class="panel-body" id="encrypt-panel">
-            <p>$encryptedString</p>
-          </div>
+      <div class="panel panel-default lightgrey-border-thin">
+        <div class="panel-body" id="encrypt-panel">
+          <p>$encryptedString</p>
         </div>
+      </div>
     </div>
 </div>
 
 <div class="row row-eq-height bottom-row">
-    <div class="col-sm-3 canvas">
-    <h3>Guess:</h3>
-    </div>
-    <div class="col-sm-9">
-        <div class="panel panel-default lightgrey-border-thin">
-          <div class="panel-body">
-            <form action="/guess" class="form-inline" method="get">
+  <div class="col-sm-3 canvas">
+  <h3>Guess:</h3>
+  </div>
+  <div class="col-sm-9">
+    <div class="panel panel-default lightgrey-border-thin">
+      <div class="panel-body">
+        <form action="/guess" class="form-inline" method="get">
 
-              <div class="row">
-                <div class="col-sm-10" id="guess">
-                  <div class="form-group width100">
-                    <label for="guess"></label>
-                    <input name="guess" class="input-background-lightgray width100" type="text">
-                  </div>
-                  <div class="hidden">
-                    <input name="puzzle-string" id="puzzle-string" type="text" value="$encryptedString">
-                  </div>
-                </div>
-                <div class="col-sm-2">
-                    <button type="submit" class="btn btn-warning">Submit</button>
-                </div>
+          <div class="row">
+            <div class="col-sm-10" id="guess">
+              <div class="form-group width100">
+                <label for="guess"></label>
+                <input name="guess" class="input-background-lightgray width100" type="text">
               </div>
-            </form>
+              <div class="hidden">
+                <input name="puzzle-string" id="puzzle-string" type="text" value="$encryptedString">
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <button type="submit" class="btn btn-warning">Submit</button>
+            </div>
           </div>
-        </div>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
+#if ($noMatch)
+<div class="row">
+  <div class="col-sm-12">
+    <div id="display-result">
+      <h4>$message</h4>
+    </div>
+  </div>
+</div>
+#end
+
+#if ($isMatch)
+<div class="row">
+  <div class="col-sm-12">
+    <div id="display-result">
+      <h4>$message</h4>
+    </div>
+  </div>
+</div>
+#end
 
 
+<!-- #if ($isMatch)
+<div id="display-result">
+  <h4>$message</h4>
+</div>
+#end -->
 
 
 <!--
 
 
-#if ($noMatch)
-<div id="display-result">
-  <h4>$message</h4>
-</div>
-#end
-#if ($isMatch)
-<div id="display-result">
-  <h4>$message</h4>
-</div>
-#end
 
 </div>  -->
