@@ -63,10 +63,6 @@ label {
   background-color: mediumseagreen;
 }
 
-/*input#puzzle-string {
-  float: right;
-}*/
-
 .input-background-lightgray {
   background-color: lightgray;
 }
@@ -124,7 +120,6 @@ h2, h4 {
   width: 95%;
   margin-top: 2px;
   height: 30px;
-  /*padding: 0 10px 0;*/
 }
 
 #guess {
@@ -137,15 +132,6 @@ h2, h4 {
 
 .col-sm-10 {
   padding-left: 0px;
-}
-
-.form-inline .form-group{
-    /*display:inline-block;*/
-    /*width: 600px;*/
-}
-
-.form-inline .form-group input {
-    /*form:;*/
 }
 
 li, #rules-text {

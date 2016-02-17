@@ -69,7 +69,5 @@ public class App {
       model.put("template", "templates/display-puzzle.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-
   }
-
 }
